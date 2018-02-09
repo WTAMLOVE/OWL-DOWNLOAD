@@ -86,9 +86,8 @@ def download(target_url, save_path = None):
     return '/'.join(save_path.split('/')[:-1])
 
 def main():
-    # target_url = input('请输入战旗视频地址：')
-    # save_name = input('请输入保存后视频文件名称：')
-    target_url = 'https://www.zhanqi.tv/v2/videos/458607.html?from=owl'
+    target_url = input('请输入战旗视频地址：')
+    # target_url = 'https://www.zhanqi.tv/v2/videos/458607.html?from=owl'
     save_path = download(target_url)
     merge_and_delete_video(save_path, global_title)
 
